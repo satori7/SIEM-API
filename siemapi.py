@@ -48,26 +48,32 @@ headers = { "X-XSRF-TOKEN": token }
 # The API call that we're making
 call = 'qryExecuteDetail?type=EVENT&reverse=false'
 
+# Read the JSON from file
 fh = open("./apicall.json", "r")
 data = fh.read()
 
 # Make the call
 r2 = client.post(url+call, headers=headers, data=data)
-
 parsedJson2 = r2.json()
 resultID2 = parsedJson2['resultID']
 
+# Now that the query is done, get the results
 getres = 'qryGetResults?startPos=0&numRows=5000000&reverse=false'
 data3 = { "resultID": resultID2 }
-
 r3 = client.post(url+getres, headers=headers, json=data3)
+
+# Write the results to a file
 fw = open("output.json","w+")
 fw.write(r3.text)
+# Print for debugging
 print(r3.text)
 
+# Close the result so the ESM doesn't get bogged down
 close = 'qryClose?resultID='+resultID2
 r3 = client.post(url+close, headers=headers)
 
+########################################
+# Debugging
 print ("\n\n*** Random debug stuff ***")
 print("URL:", url+call)
 print("URL2:", url+getres)
