@@ -28,16 +28,23 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Start a session
 client = requests.session()
 
-# The API call that we're making
-# call = input("API Call > ")
-call = 'qryExecuteDetail?type=EVENT&reverse=false'
-
 # Login and get the token
-r1 = client.post(authUrl, verify=False, json=authBody)
+try:
+    r1 = client.post(authUrl, verify=False, json=authBody)
+except requests.exceptions.RequestException as e:
+    print(e)
+    sys.exit(1)
 
-token = r1.headers['Xsrf-Token']
+try:
+    token = r1.headers['Xsrf-Token']
+except:
+    print("\nFailed to authenticate.\n")
+    sys.exit(1)
 
 headers = { "X-XSRF-TOKEN": token }
+
+# The API call that we're making
+call = 'qryExecuteDetail?type=EVENT&reverse=false'
 
 fh = open("./apicall.json", "r")
 data = fh.read()
