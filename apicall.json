@@ -12,9 +12,12 @@
 	}],
 	"filters": [{
 		"type": "EsmFieldFilter",
-		"field": {"name": "DSID"},
+		"field": {"name": "Alert.IPSID"},
 		"operator": "IN",
-		"values": "null"
+		"values": [{
+			"type": "EsmBasicValue",
+			"value": "144116287671369728"
+		}]
 	}],
 	"limit": 0,
 	"offset": 0
