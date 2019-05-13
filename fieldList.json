@@ -1,0 +1,2799 @@
+[ {
+  "id" : "65622",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Access_Mask"
+}, {
+  "id" : "4259883",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Access_Privileges"
+}, {
+  "id" : "65555",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Access_Resource"
+}, {
+  "id" : null,
+  "table" : "Action",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Action.Name"
+}, {
+  "id" : "262162",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "Agent_GUID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT8", "UINT8", "UINT8", "UINT8", "UINT8" ],
+  "name" : "Action"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "DSID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "SIGID", "SIGID", "SIGID", "SIGID", "SIGID" ],
+  "name" : "DSIDSigID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "ASNGeoDst"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "MAC_ADDRESS", "MAC_ADDRESS", "MAC_ADDRESS", "MAC_ADDRESS", "MAC_ADDRESS" ],
+  "name" : "DstMac"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT16", "UINT16", "UINT16", "UINT16", "UINT16" ],
+  "name" : "DstPort"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT16", "UINT16", "UINT16", "UINT16", "UINT16" ],
+  "name" : "ZoneDst"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "WriteTime"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 4,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "EventCount"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT32", "UINT32", "UINT32", "UINT32", "UINT32" ],
+  "name" : "FirstTime"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Flow"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "IPSIDAlertID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "AlertID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ ],
+  "name" : "IPSID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 1,
+  "typeBits" : 1,
+  "types" : [ "UINT32", "UINT32", "UINT32", "UINT32", "UINT32" ],
+  "name" : "LastTime"
+}, {
+  "id" : null,
+  "table" : "Rule",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Rule.NormID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT8", "UINT8", "UINT8", "UINT8", "UINT8" ],
+  "name" : "Protocol"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Reviewed"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Severity"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SIGID", "SIGID", "SIGID", "SIGID", "SIGID" ],
+  "name" : "SigID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "ASNGeoSrc"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "IP", "IP", "IP", "IP", "IP" ],
+  "name" : "SrcIP"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "MAC_ADDRESS", "MAC_ADDRESS", "MAC_ADDRESS", "MAC_ADDRESS", "MAC_ADDRESS" ],
+  "name" : "SrcMac"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT16", "UINT16", "UINT16", "UINT16", "UINT16" ],
+  "name" : "SrcPort"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT16", "UINT16", "UINT16", "UINT16", "UINT16" ],
+  "name" : "ZoneSrc"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "VLan"
+}, {
+  "id" : "262170",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Analyzer_DAT_Version"
+}, {
+  "id" : "1",
+  "table" : null,
+  "alertField" : 1,
+  "flowField" : 3,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "AppID"
+}, {
+  "id" : "65615",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "App_Layer_Protocol"
+}, {
+  "id" : "9",
+  "table" : null,
+  "alertField" : 1,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Application_Protocol"
+}, {
+  "id" : "65576",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Area"
+}, {
+  "id" : null,
+  "table" : "Users",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 17,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Users.Name"
+}, {
+  "id" : "262175",
+  "table" : null,
+  "alertField" : 7,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "IPV4", "IPV4", "IPV4", "IPV4", "IPV4" ],
+  "name" : "Attacker_IP"
+}, {
+  "id" : "65621",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Attribute_Type"
+}, {
+  "id" : "65618",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Authentication_Type"
+}, {
+  "id" : "20",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Authoritative_Answer"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "AvgSeverity"
+}, {
+  "id" : "4259847",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Bcc"
+}, {
+  "id" : "4521985",
+  "table" : null,
+  "alertField" : 2,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Bytes_Received"
+}, {
+  "id" : "4521986",
+  "table" : null,
+  "alertField" : 1,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Bytes_Sent"
+}, {
+  "id" : "4521988",
+  "table" : null,
+  "alertField" : 2,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Bytes_from_Client"
+}, {
+  "id" : "4521989",
+  "table" : null,
+  "alertField" : 1,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Bytes_from_Server"
+}, {
+  "id" : "65587",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Caller_Process"
+}, {
+  "id" : "65556",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Catalog_Name"
+}, {
+  "id" : "65540",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Category"
+}, {
+  "id" : "4259846",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Cc"
+}, {
+  "id" : null,
+  "table" : "Class",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Class.Name"
+}, {
+  "id" : null,
+  "table" : "Class",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Class.Priority"
+}, {
+  "id" : "4259853",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Client_Version"
+}, {
+  "id" : "65628",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "CnC_Host"
+}, {
+  "id" : "2",
+  "table" : null,
+  "alertField" : 2,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "CommandID"
+}, {
+  "id" : "4456458",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Confidence"
+}, {
+  "id" : "15",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Contact_Name"
+}, {
+  "id" : "16",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Contact_Nickname"
+}, {
+  "id" : "4259850",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Cookie"
+}, {
+  "id" : "4521987",
+  "table" : null,
+  "alertField" : 3,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Count"
+}, {
+  "id" : "65551",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Creator_Name"
+}, {
+  "id" : "262165",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "DAT_Version"
+}, {
+  "id" : "65557",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "DB2_Plan_Name"
+}, {
+  "id" : "21364737",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DNS - Class"
+}, {
+  "id" : "38141953",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DNS - Class_Name"
+}, {
+  "id" : "122028033",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DNS - Query"
+}, {
+  "id" : "88473601",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DNS - Response_Code"
+}, {
+  "id" : "105250817",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DNS - Response_Code_Name"
+}, {
+  "id" : "54919169",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DNS - Type"
+}, {
+  "id" : "71696385",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DNS - Type_Name"
+}, {
+  "id" : "18",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "DNS_Class"
+}, {
+  "id" : "4259867",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "DNS_Name"
+}, {
+  "id" : "262178",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "IP", "IP", "IP", "IP", "IP" ],
+  "name" : "DNS_Server_IP"
+}, {
+  "id" : "17",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "DNS_Type"
+}, {
+  "id" : "262169",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "Database_GUID"
+}, {
+  "id" : "65569",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Database_ID"
+}, {
+  "id" : "8",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Database_Name"
+}, {
+  "id" : "65602",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Datacenter_ID"
+}, {
+  "id" : "65603",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Datacenter_Name"
+}, {
+  "id" : "65550",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Delivery_ID"
+}, {
+  "id" : "4259873",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Description"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "GUIDDst"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "IP", "IP", "IP", "IP", "IP" ],
+  "name" : "DstIP"
+}, {
+  "id" : null,
+  "table" : "Zone_ZoneDst",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Zone_ZoneDst.Name"
+}, {
+  "id" : "65592",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Destination_Directory"
+}, {
+  "id" : "4259852",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Destination_Filename"
+}, {
+  "id" : "65539",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Destination_Hostname"
+}, {
+  "id" : "65584",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Destination_Logon_ID"
+}, {
+  "id" : "65573",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Destination_Network"
+}, {
+  "id" : "65567",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Destination_UserID"
+}, {
+  "id" : "65542",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Destination_Zone"
+}, {
+  "id" : "65599",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Detection_Method"
+}, {
+  "id" : "65594",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Device_Action"
+}, {
+  "id" : "262179",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Device_Confidence"
+}, {
+  "id" : "262154",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "IP", "IP", "IP", "IP", "IP" ],
+  "name" : "Device_IP"
+}, {
+  "id" : "262155",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Device_Port"
+}, {
+  "id" : "4259886",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Device_URL"
+}, {
+  "id" : "30",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Direction"
+}, {
+  "id" : "65591",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Directory"
+}, {
+  "id" : "3",
+  "table" : null,
+  "alertField" : 3,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "DomainID"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoDst",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoDst.Msg"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoDst",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoDst.Latitude"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoDst",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoDst.Longitude"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoDst",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoDst.XCoord"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoDst",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoDst.YCoord"
+}, {
+  "id" : "4521990",
+  "table" : null,
+  "alertField" : 3,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Elapsed_Time"
+}, {
+  "id" : "4456451",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "End_Page"
+}, {
+  "id" : "4259887",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Engine_List"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Sequence"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "SessionID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Trusted"
+}, {
+  "id" : "65545",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Event_Class"
+}, {
+  "id" : "65552",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "External_Application"
+}, {
+  "id" : "65553",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "External_DB2_Server"
+}, {
+  "id" : "65607",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "External_Device_ID"
+}, {
+  "id" : "65608",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "External_Device_Name"
+}, {
+  "id" : "65606",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "External_Device_Type"
+}, {
+  "id" : "262156",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "External_EventID"
+}, {
+  "id" : "65575",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "External_Hostname"
+}, {
+  "id" : "65582",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "External_SessionID"
+}, {
+  "id" : "262158",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "External_SubEventID"
+}, {
+  "id" : "65559",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "FTP_Command"
+}, {
+  "id" : "65577",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Facility"
+}, {
+  "id" : "262159",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "File_Hash"
+}, {
+  "id" : "65620",
+  "table" : null,
+  "alertField" : 7,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "File_ID"
+}, {
+  "id" : "12",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "File_Operation"
+}, {
+  "id" : "13",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "File_Operation_Succeeded"
+}, {
+  "id" : "4259877",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "File_Path"
+}, {
+  "id" : "4521992",
+  "table" : null,
+  "alertField" : 3,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "File_Size"
+}, {
+  "id" : "65558",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "File_Type"
+}, {
+  "id" : "4259843",
+  "table" : null,
+  "alertField" : 3,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Filename"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ ],
+  "name" : "FlowID"
+}, {
+  "id" : "4259844",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "From"
+}, {
+  "id" : "4259875",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "From_Address"
+}, {
+  "id" : "262153",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "IP", "IP", "IP", "IP", "IP" ],
+  "name" : "Grid_Master_IP"
+}, {
+  "id" : "65614",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Group_Name"
+}, {
+  "id" : "262168",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Handheld_ID"
+}, {
+  "id" : "262160",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Handle_ID"
+}, {
+  "id" : "65624",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Hash"
+}, {
+  "id" : "65625",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Hash_Type"
+}, {
+  "id" : "4456459",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Hops"
+}, {
+  "id" : "4",
+  "table" : null,
+  "alertField" : 4,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "HostID"
+}, {
+  "id" : null,
+  "table" : "IPS",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 7,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "IPS.Name"
+}, {
+  "id" : "262173",
+  "table" : null,
+  "alertField" : 2,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "INT64", "INT64", "INT64", "INT64", "INT64" ],
+  "name" : "Incident_ID"
+}, {
+  "id" : "65574",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Incoming_ID"
+}, {
+  "id" : "262161",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "Instance_GUID"
+}, {
+  "id" : "29",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 5,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Interface"
+}, {
+  "id" : "65604",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Interface_Dest"
+}, {
+  "id" : "4259854",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Job_Name"
+}, {
+  "id" : "65560",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Job_Type"
+}, {
+  "id" : "65562",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "LPAR_DB2_Subsystem"
+}, {
+  "id" : "4259855",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Language"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "LastTime_usec"
+}, {
+  "id" : "4259860",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Local_User_Name"
+}, {
+  "id" : "65561",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Logical_Unit_Name"
+}, {
+  "id" : "65580",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Logon_Type"
+}, {
+  "id" : "65548",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Mail_ID"
+}, {
+  "id" : "65590",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Mailbox"
+}, {
+  "id" : "65568",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Mainframe_Job_Name"
+}, {
+  "id" : "65570",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Malware_Insp_Action"
+}, {
+  "id" : "65571",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Malware_Insp_Result"
+}, {
+  "id" : "65581",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Management_Server"
+}, {
+  "id" : "65547",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Message_ID"
+}, {
+  "id" : "4259842",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Message_Text"
+}, {
+  "id" : "11",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Method"
+}, {
+  "id" : "262146",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 1,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "IPV4", "UINT16", "UINT16", "IPV4", "UINT16", "UINT16", "IPV4", "UINT16", "UINT16", "IPV4", "UINT16", "UINT16", "IPV4", "UINT16", "UINT16", "IPV4", "UINT16", "UINT16" ],
+  "name" : "NAT_Details"
+}, {
+  "id" : "25",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "NTP_Client_Mode"
+}, {
+  "id" : "4456457",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "NTP_Offset_To_Monitor"
+}, {
+  "id" : "28",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "NTP_Opcode"
+}, {
+  "id" : "27",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "NTP_Request"
+}, {
+  "id" : "26",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "NTP_Server_Mode"
+}, {
+  "id" : "54919172",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "New_Reputation - ATD_File"
+}, {
+  "id" : "71696388",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "New_Reputation - GTI_Cert"
+}, {
+  "id" : "21364740",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "New_Reputation - GTI_File"
+}, {
+  "id" : "88473604",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "New_Reputation - TIE_Cert"
+}, {
+  "id" : "38141956",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "New_Reputation - TIE_File"
+}, {
+  "id" : "4259885",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "New_Value"
+}, {
+  "id" : null,
+  "table" : "Rule_NDSNormSigID",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Rule_NDSNormSigID.msg"
+}, {
+  "id" : "4456449",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Num_Copies"
+}, {
+  "id" : "5",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "ObjectID"
+}, {
+  "id" : "262176",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "Object_GUID"
+}, {
+  "id" : "10",
+  "table" : null,
+  "alertField" : 2,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Object_Type"
+}, {
+  "id" : "54919171",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Old_Reputation - ATD_File"
+}, {
+  "id" : "71696387",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Old_Reputation - GTI_Cert"
+}, {
+  "id" : "21364739",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Old_Reputation - GTI_File"
+}, {
+  "id" : "88473603",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Old_Reputation - TIE_Cert"
+}, {
+  "id" : "38141955",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Old_Reputation - TIE_File"
+}, {
+  "id" : "4259884",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Old_Value"
+}, {
+  "id" : "65579",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Operating_System"
+}, {
+  "id" : "65605",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Organizational_Unit"
+}, {
+  "id" : "4259881",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "PCAP_Name"
+}, {
+  "id" : "262152",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "PID"
+}, {
+  "id" : "262172",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "Parent_File_Hash"
+}, {
+  "id" : "262167",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Policy_ID"
+}, {
+  "id" : "65544",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Policy_Name"
+}, {
+  "id" : "4456460",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Priority"
+}, {
+  "id" : "65578",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Privileged_User"
+}, {
+  "id" : "4259879",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Privileges"
+}, {
+  "id" : "4259870",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Process_Name"
+}, {
+  "id" : "19",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Query_Response"
+}, {
+  "id" : "196609",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRLIT", "STRLIT", "STRLIT", "STRLIT", "STRLIT" ],
+  "name" : "Queue_ID"
+}, {
+  "id" : "4259858",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "RTMP_Application"
+}, {
+  "id" : "65597",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 21,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Reason"
+}, {
+  "id" : "4521991",
+  "table" : null,
+  "alertField" : 3,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Recipient_Count"
+}, {
+  "id" : "65549",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Recipient_ID"
+}, {
+  "id" : "4259851",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Referer"
+}, {
+  "id" : "21364738",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Registry - Key"
+}, {
+  "id" : "38141954",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "Registry - Value"
+}, {
+  "id" : "65588",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Registry_Key"
+}, {
+  "id" : "65589",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Registry_Value"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "RemCaseID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "RemOpenTicketTime"
+}, {
+  "id" : "262164",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Reputation"
+}, {
+  "id" : "65610",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Reputation_Name"
+}, {
+  "id" : "262171",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Reputation_Score"
+}, {
+  "id" : "262177",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "IP", "IP", "IP", "IP", "IP" ],
+  "name" : "Reputation_Server_IP"
+}, {
+  "id" : "65546",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Request_Type"
+}, {
+  "id" : "33",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Response_Code"
+}, {
+  "id" : "262145",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT32", "UINT32", "UINT32", "UINT32", "UINT32", "UINT32", "UINT32", "UINT32", "UINT32", "UINT32" ],
+  "name" : "Response_Time"
+}, {
+  "id" : "34",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Return_Code"
+}, {
+  "id" : null,
+  "table" : "Rule",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Rule.ID"
+}, {
+  "id" : null,
+  "table" : "Rule",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Rule.msg"
+}, {
+  "id" : "65616",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Rule_Name"
+}, {
+  "id" : "65619",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "SHA1"
+}, {
+  "id" : "65630",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "SHA256"
+}, {
+  "id" : "24",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "SNMP_Error_Code"
+}, {
+  "id" : "4259868",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "SNMP_Item"
+}, {
+  "id" : "22",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "SNMP_Item_Type"
+}, {
+  "id" : "21",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "SNMP_Operation"
+}, {
+  "id" : "23",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "SNMP_Version"
+}, {
+  "id" : "65593",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "SQL_Command"
+}, {
+  "id" : "4259874",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "SQL_Statement"
+}, {
+  "id" : "4259856",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "SWF_URL"
+}, {
+  "id" : "4259880",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Search_Query"
+}, {
+  "id" : "65617",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Security_ID"
+}, {
+  "id" : "31",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Sensor_Name"
+}, {
+  "id" : "32",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Sensor_Type"
+}, {
+  "id" : "4259869",
+  "table" : null,
+  "alertField" : 9,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Sensor_UUID"
+}, {
+  "id" : "262166",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Server_ID"
+}, {
+  "id" : "65609",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Service_Name"
+}, {
+  "id" : "65585",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Session_Status"
+}, {
+  "id" : "65629",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Share_Name"
+}, {
+  "id" : "65537",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Signature_Name"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 9,
+  "typeBits" : 17,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "GUIDSrc"
+}, {
+  "id" : null,
+  "table" : "Zone_ZoneSrc",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "Zone_ZoneSrc.Name"
+}, {
+  "id" : "4259871",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Source_Context"
+}, {
+  "id" : "65583",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Source_Logon_ID"
+}, {
+  "id" : "65572",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Source_Network"
+}, {
+  "id" : "65566",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Source_UserID"
+}, {
+  "id" : "65541",
+  "table" : null,
+  "alertField" : 21,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Source_Zone"
+}, {
+  "id" : "262157",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Spam_Score"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoSrc",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoSrc.Msg"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoSrc",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoSrc.Latitude"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoSrc",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoSrc.Longitude"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoSrc",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoSrc.XCoord"
+}, {
+  "id" : null,
+  "table" : "GeoLoc_ASNGeoSrc",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "GeoLoc_ASNGeoSrc.YCoord"
+}, {
+  "id" : "4456450",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "UINT64", "UINT64", "UINT64", "UINT64", "UINT64" ],
+  "name" : "Start_Page"
+}, {
+  "id" : "65611",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Status"
+}, {
+  "id" : "65563",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Step_Count"
+}, {
+  "id" : "65564",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Step_Name"
+}, {
+  "id" : "65612",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Sub_Status"
+}, {
+  "id" : "65627",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Subcategory"
+}, {
+  "id" : "4259848",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Subject"
+}, {
+  "id" : "4259857",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "TC_URL"
+}, {
+  "id" : "65554",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Table_Name"
+}, {
+  "id" : "65543",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Target_Class"
+}, {
+  "id" : "4259872",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Target_Context"
+}, {
+  "id" : "4259878",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Target_Process_Name"
+}, {
+  "id" : null,
+  "table" : "ThirdPartyType",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "ThirdPartyType.Name"
+}, {
+  "id" : "65595",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Threat_Category"
+}, {
+  "id" : "65596",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Threat_Handled"
+}, {
+  "id" : "65538",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Threat_Name"
+}, {
+  "id" : "4259845",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "To"
+}, {
+  "id" : "4259876",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "To_Address"
+}, {
+  "id" : "4521993",
+  "table" : null,
+  "alertField" : 3,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "FLOAT", "FLOAT", "FLOAT", "FLOAT", "FLOAT" ],
+  "name" : "Total_Bytes"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 1,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UCF"
+}, {
+  "id" : "4259841",
+  "table" : null,
+  "alertField" : 8,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "URL"
+}, {
+  "id" : "65586",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "URL_Category"
+}, {
+  "id" : "262163",
+  "table" : null,
+  "alertField" : 22,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "GUID", "GUID", "GUID", "GUID", "GUID" ],
+  "name" : "UUID"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "AppIDCat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld10Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "CommandIDCat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld21Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld22Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld23Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld24Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld25Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld26Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld27Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "DomainIDCat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "HostIDCat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "ObjectIDCat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserIDDstCat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserIDSrcCat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld8Cat"
+}, {
+  "id" : null,
+  "table" : "Alert",
+  "alertField" : 0,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ ],
+  "name" : "UserFld9Cat"
+}, {
+  "id" : "6",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 1,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "UserIDDst"
+}, {
+  "id" : "7",
+  "table" : null,
+  "alertField" : 7,
+  "flowField" : 2,
+  "filterFlag" : 0,
+  "typeBits" : 3,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "UserIDSrc"
+}, {
+  "id" : "4259849",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "User_Agent"
+}, {
+  "id" : "14",
+  "table" : null,
+  "alertField" : 5,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "STRING", "STRING", "STRING", "STRING", "STRING" ],
+  "name" : "User_Nickname"
+}, {
+  "id" : "65623",
+  "table" : null,
+  "alertField" : 25,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "VPN_Feature_Name"
+}, {
+  "id" : "4259859",
+  "table" : null,
+  "alertField" : 10,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Version"
+}, {
+  "id" : "262174",
+  "table" : null,
+  "alertField" : 6,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "IPV4", "IPV4", "IPV4", "IPV4", "IPV4" ],
+  "name" : "Victim_IP"
+}, {
+  "id" : "65601",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Virtual_Machine_ID"
+}, {
+  "id" : "65600",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Virtual_Machine_Name"
+}, {
+  "id" : "65565",
+  "table" : null,
+  "alertField" : 27,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Volume_ID"
+}, {
+  "id" : "4259882",
+  "table" : null,
+  "alertField" : 24,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Vulnerability_References"
+}, {
+  "id" : "65613",
+  "table" : null,
+  "alertField" : 26,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Web_Domain"
+}, {
+  "id" : "65626",
+  "table" : null,
+  "alertField" : 23,
+  "flowField" : 0,
+  "filterFlag" : 0,
+  "typeBits" : 1,
+  "types" : [ "SSTRING", "SSTRING", "SSTRING", "SSTRING", "SSTRING" ],
+  "name" : "Wireless_SSID"
+} ]
+
+
+*** Random debug stuff ***
+URL: 
+https://10.57.12.242/rs/esm/v2/qryGetSelectFields?type=EVENT&groupType=NO_GROUP
+
+Status: 
+200
