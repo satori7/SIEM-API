@@ -30,7 +30,7 @@ token = r1.headers['Xsrf-Token']
 
 headers = { "X-XSRF-TOKEN": token }
 
-fh = open("/home/chawkins/Dropbox/Code/Python/SIEM.API/SOC/apicall.json", "r")
+fh = open("./apicall.json", "r")
 data = fh.read()
 
 # Make the call
