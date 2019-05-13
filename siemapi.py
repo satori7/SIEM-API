@@ -43,30 +43,26 @@ except:
 
 headers = { "X-XSRF-TOKEN": token }
 
-dsid = input("Authenticated. Please enter the data source ID: ")
-
-json = {"config": { "timeRange": "CUSTOM", "customStart": "2019-05-11T00:00:00", "customEnd": "2019-05-12T00:00:00", "order": [{ "direction": "ASCENDING", "field": { "name": "DSID", "typeBits": 0, "id": "null" } }], "filters": [{ "type": "EsmFieldFilter", "field": {"name": "Alert.IPSID"}, "operator": "IN", "values": [{ "type": "EsmBasicValue", "value": "{}".format(dsid) }] }], "limit": 0, "offset": 0 }}
+# dsid = input("Authenticated. Please enter the data source ID: ")
 
 # The API call that we're making
 call = 'qryExecuteDetail?type=EVENT&reverse=false'
 
-# fh = open("./apicall.json", "r")
-# data = fh.read()
-data = json
-print(data)
+fh = open("./apicall.json", "r")
+data = fh.read()
 
 # Make the call
 r2 = client.post(url+call, headers=headers, data=data)
 
-print (r2.text)
 parsedJson2 = r2.json()
 resultID2 = parsedJson2['resultID']
-print (resultID2);
 
-getres = 'qryGetResults?startPos=0&numRows=1000000&reverse=false'
+getres = 'qryGetResults?startPos=0&numRows=5000000&reverse=false'
 data3 = { "resultID": resultID2 }
 
 r3 = client.post(url+getres, headers=headers, json=data3)
+fw = open("output.json","w+")
+fw.write(r3.text)
 print(r3.text)
 
 close = 'qryClose?resultID='+resultID2
