@@ -5,16 +5,16 @@
 	"order": [{
 		"direction": "ASCENDING",
 		"field": {
-			"name": "HostIDCat",
+			"name": "DSID",
 			"typeBits": 0,
 			"id": "null"
 		}
 	}],
 	"filters": [{
 		"type": "EsmFieldFilter",
-		"name": "ObjectID",
+		"field": {"name": "DSID"},
 		"operator": "IN",
-		"values": "144116287671369728"
+		"values": "null"
 	}],
 	"limit": 0,
 	"offset": 0
