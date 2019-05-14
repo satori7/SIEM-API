@@ -16,7 +16,7 @@
 		"operator": "IN",
 		"values": [{
 			"type": "EsmBasicValue",
-			"value": "144116287788810240"
+			"value": "$DSID"
 		}]
 	}],
 	"limit": 0,

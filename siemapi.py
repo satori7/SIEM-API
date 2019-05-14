@@ -43,14 +43,14 @@ except:
 
 headers = { "X-XSRF-TOKEN": token }
 
-# dsid = input("Authenticated. Please enter the data source ID: ")
+dsid = input("Authenticated. Please enter the data source ID: ")
 
 # The API call that we're making
 call = 'qryExecuteDetail?type=EVENT&reverse=false'
 
 # Read the JSON from file
 fh = open("./apicall.json", "r")
-data = fh.read()
+data = fh.read().replace('$DSID', dsid)
 
 # Make the call
 r2 = client.post(url+call, headers=headers, data=data)
