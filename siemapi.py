@@ -51,7 +51,6 @@ call = 'qryExecuteDetail?type=EVENT&reverse=false'
 # Read the JSON from file.
 fh = open("./apicall.json", "r")
 data = fh.read().replace('$DSID', dsid)
-print(data)
 
 # Make the call.
 r2 = client.post(url+call, headers=headers, data=data)
