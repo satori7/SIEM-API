@@ -12,7 +12,7 @@ esmuser = input("Username: ");
 esmpass = getpass.getpass(prompt="Password: ");
 esmip = input("ESM IP: ");
 
-# Config options: URL to connect to, send calls to, and user/pass
+# Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
 url = "https://{}/rs/esm/v2/".format(esmip);
 
@@ -22,13 +22,13 @@ esmpass = base64.b64encode(esmpass.encode('utf-8'));
 esmpass = esmpass.decode('utf-8')
 authBody = { "username": "{}".format(esmuser), "password": "{}".format(esmpass), "locale": "en_US" }
 
-# Silence the annoying insecure warning
+# Silence the annoying insecure warning.
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Start a session
+# Start a session.
 client = requests.session()
 
-# Login and get the token
+# Login and get the token.
 try:
     r1 = client.post(authUrl, verify=False, json=authBody)
 except requests.exceptions.RequestException as e:
@@ -45,19 +45,20 @@ headers = { "X-XSRF-TOKEN": token }
 
 dsid = input("Authenticated. Please enter the data source ID: ")
 
-# The API call that we're making
+# The API call that we're making.
 call = 'qryExecuteDetail?type=EVENT&reverse=false'
 
-# Read the JSON from file
+# Read the JSON from file.
 fh = open("./apicall.json", "r")
 data = fh.read().replace('$DSID', dsid)
+print(data)
 
-# Make the call
+# Make the call.
 r2 = client.post(url+call, headers=headers, data=data)
 parsedJson2 = r2.json()
 resultID2 = parsedJson2['resultID']
 
-# Now that the query is done, get the results
+# Now that the query is done, get the results.
 getres = 'qryGetResults?startPos=0&numRows=5000000&reverse=false'
 data3 = { "resultID": resultID2 }
 r3 = client.post(url+getres, headers=headers, json=data3)

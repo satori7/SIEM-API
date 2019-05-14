@@ -1,7 +1,7 @@
 {"config": {
 	"timeRange": "CUSTOM",
-	"customStart": "2019-05-11T00:00:00",
-	"customEnd": "2019-05-12T00:00:00",
+	"customStart": "2019-05-01T00:00:00",
+	"customEnd": "2019-05-14T00:00:00",
 	"order": [{
 		"direction": "ASCENDING",
 		"field": {
