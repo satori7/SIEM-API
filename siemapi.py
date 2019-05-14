@@ -58,6 +58,13 @@ r2 = client.post(url+call, headers=headers, data=data)
 parsedJson2 = r2.json()
 resultID2 = parsedJson2['resultID']
 
+# Check to see if the job is done.
+statusCall = "qryGetStatus"
+data2 = { "resultID": { "value": resultID2 }}
+r4 = client.post(url+statusCall, headers=headers, json=data2)
+print(data2)
+print(r4)
+
 # Now that the query is done, get the results.
 getres = 'qryGetResults?startPos=0&numRows=5000000&reverse=false'
 data3 = { "resultID": resultID2 }

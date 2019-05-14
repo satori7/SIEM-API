@@ -18,8 +18,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 client = requests.session()
 
 # The API call that we're making
-call = input("API Call > ")
-# call = 'qryGetFilterFields'
+# call = input("API Call > ")
+call = 'qryGetStatus'
+data = '{"resultID": {"value": 4485633587}}'
 
 # Login and get the token
 r1 = client.post(authUrl, verify=False, json=authBody)
@@ -29,7 +30,7 @@ token = r1.headers['Xsrf-Token']
 headers = { "X-XSRF-TOKEN": token }
 
 # Make the call
-r2 = client.post(url+call, headers=headers)
+r2 = client.post(url+call, headers=headers, data=data)
 
 print(r2.text)
 
