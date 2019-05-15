@@ -60,12 +60,20 @@ resultID2 = parsedJson2['resultID']
 # Check to see if the job is done.
 statusCall = "qryGetStatus"
 data4 = { "resultID": { "value": resultID2 }}
-r4 = client.post(url+statusCall, headers=headers, json=data4)
+try:
+    r4 = client.post(url+statusCall, headers=headers, json=data4)
+except requests.exceptions.RequestException as e:
+    print(e)
+    sys.exit(1)
 
 # Now that the query is done, get the results.
 getres = 'qryGetResults?startPos=0&numRows=5000000&reverse=false'
 data3 = { "resultID": resultID2 }
-r3 = client.post(url+getres, headers=headers, json=data3)
+try:
+    r3 = client.post(url+getres, headers=headers, json=data3)
+except requests.exceptions.RequestException as e:
+    print(e)
+    sys.exit(1)
 
 # Write the results to a file
 fw = open("output.json","w+")
