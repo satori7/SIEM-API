@@ -59,13 +59,16 @@ resultID2 = parsedJson2['resultID']
 
 # Check to see if the job is done.
 statusCall = "qryGetStatus"
-data4 = { "resultID": { "value": "{}".format(resultID2) }}
-print(data4)
+data4 = { "resultID": { "{}".format(resultID2) }}
 try:
-    r4 = client.post(url+statusCall, headers=headers, json=data4)
+    r4 = client.post(url+statusCall, headers=headers, params=data4)
 except requests.exceptions.RequestException as e:
     print(e)
     sys.exit(1)
+parsedJson4 = r4.json()
+while parsedJson4['complete'] == "False":
+    print("Still cookin'\n")
+    sleep(1)
 
 # Now that the query is done, get the results.
 getres = 'qryGetResults?startPos=0&numRows=5000000&reverse=false'
@@ -79,10 +82,8 @@ except requests.exceptions.RequestException as e:
 # Write the results to a file
 fw = open("output.json","w+")
 fw.write(r3.text)
-# Print for debugging
-# print(r3.text)
 
-# Close the result so the ESM doesn't get bogged down
+# Close the result so the ESM doesn't get jammed up
 close = 'qryClose?resultID='+resultID2
 r3 = client.post(url+close, headers=headers)
 

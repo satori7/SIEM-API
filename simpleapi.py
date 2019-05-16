@@ -27,7 +27,7 @@ headers = { "X-XSRF-TOKEN": token }
 # The API call that we're making
 # call = input("API Call > ")
 call = 'qryGetStatus'
-data = {"resultID": {"value": 4441376164}}
+data = {"resultID": {'3533729092'}}
 
 # Make the call
 r2 = client.post(url+call, headers=headers, json=data)
