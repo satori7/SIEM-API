@@ -60,6 +60,7 @@ resultID2 = parsedJson2['resultID']
 # Check to see if the job is done.
 statusCall = "qryGetStatus"
 data4 = { "resultID": { "value": resultID2 }}
+print(data4)
 try:
     r4 = client.post(url+statusCall, headers=headers, json=data4)
 except requests.exceptions.RequestException as e:
