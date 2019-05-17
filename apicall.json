@@ -1,6 +1,6 @@
 {"config": {
 	"timeRange": "CUSTOM",
-	"customStart": "2019-01-01T00:00:00",
+	"customStart": "2018-01-01T00:00:00",
 	"customEnd": "2019-05-14T00:00:00",
 	"order": [{
 		"direction": "ASCENDING",
