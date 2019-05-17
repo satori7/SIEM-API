@@ -8,15 +8,11 @@ import urllib3
 import base64
 import getpass
 import time
+import thread
 
 esmuser = input("Username: ");
 esmpass = getpass.getpass(prompt="Password: ");
 esmip = input("ESM IP: ");
-
-# For testing
-esmuser = 'NGCP'
-esmpass = 'Security.4u'
-esmip = '10.57.12.95'
 
 # Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
