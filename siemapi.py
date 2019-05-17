@@ -8,7 +8,6 @@ import urllib3
 import base64
 import getpass
 import time
-import thread
 
 esmuser = input("Username: ");
 esmpass = getpass.getpass(prompt="Password: ");
@@ -78,7 +77,7 @@ while True:
 
 # Now that the query is done, get the results.
 print("Getting results...")
-getres = 'qryGetResults?startPos=0&numRows=5000000&reverse=false'
+getres = 'qryGetResults?startPos=0&numRows=65000&reverse=false'
 data3 = { "resultID": resultID2 }
 try:
     r3 = client.post(url+getres, headers=headers, json=data3)
