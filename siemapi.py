@@ -1,6 +1,7 @@
 #!/bin/python
 # -*- coding: utf-8 -*-
 
+import os
 import sys
 import requests
 import json
@@ -94,14 +95,3 @@ close = 'qryClose?resultID='+resultID2
 r3 = client.post(url+close, headers=headers)
 
 print("Complete")
-########################################
-# Debugging
-# print ("\n\n*** Random debug stuff ***")
-# print("URL:", url+call)
-# print("URL2:", url+getres)
-# print('Result ID from r2:', resultID2)
-# print("Status1:", r1.status_code)
-# print("Status2:", r2.status_code)
-# print("Status3:", r3.status_code)
-# print("Status4:", r4.status_code)
-# print("r4 Message: ", r4.text)
