@@ -48,6 +48,8 @@ headers = { "X-XSRF-TOKEN": token }
 
 dsid = input("Authenticated. Please enter the data source ID: ")
 
+# TODO: Create a keep alive thread.
+
 # The API call that we're making.
 call = 'qryExecuteDetail?type=EVENT&reverse=false'
 
