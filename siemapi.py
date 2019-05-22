@@ -9,10 +9,17 @@ import urllib3
 import base64
 import getpass
 import time
+import threading
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
 
 esmuser = input("Username: ");
 esmpass = getpass.getpass(prompt="Password: ");
 esmip = input("ESM IP: ");
+
+esmuser = "NGCP"
+esmpass = "Security.4u"
+esmip = "10.57.12.95"
 
 # Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
@@ -28,8 +35,12 @@ authBody = { "username": "{}".format(esmuser), "password": "{}".format(esmpass),
 # Silence the annoying insecure warning.
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Start a session.
+# Start a session and keep it from being a jerk.
 client = requests.session()
+retry = Retry(connect=3, backoff_factor=0.5)
+adapter = HTTPAdapter(max_retries=retry)
+client.mount('http://', adapter)
+client.mount('https://', adapter)
 
 # Login and get the token.
 try:
@@ -49,6 +60,19 @@ headers = { "X-XSRF-TOKEN": token }
 dsid = input("Authenticated. Please enter the data source ID: ")
 
 # TODO: Create a keep alive thread.
+def keepAlive(t):
+    global alive
+    while alive == "1":
+        time.sleep(1) # Need to pause to prevent oversubscription?
+        call = "miscKeepAlive"
+        ka = client.post(url+call, headers=headers)
+        time.sleep(t)
+        print(ka)
+
+
+alive="1"
+thread = threading.Thread(target=keepAlive, args=(5, ))
+thread.start()
 
 # The API call that we're making.
 call = 'qryExecuteDetail?type=EVENT&reverse=false'
@@ -95,5 +119,6 @@ fw.write(r3.text)
 # Close the result so the ESM doesn't get jammed up
 close = 'qryClose?resultID='+resultID2
 r3 = client.post(url+close, headers=headers)
+alive = "0"
 
 print("Complete")
