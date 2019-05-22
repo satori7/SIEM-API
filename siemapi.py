@@ -72,7 +72,7 @@ def keepAlive(t):
         call = "miscKeepAlive"
         ka = client.post(url+call, verify=False, headers=headers)
         time.sleep(t)
-        print(ka)
+        print(".")
         global tstop
         if tstop:
             break
