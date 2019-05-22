@@ -26,10 +26,6 @@ esmuser = input("Username: ");
 esmpass = getpass.getpass(prompt="Password: ");
 esmip = input("ESM IP: ");
 
-esmuser = "NGCP"
-esmpass = "Security.4u"
-esmip = "10.57.12.95"
-
 # Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
 url = "https://{}/rs/esm/v2/".format(esmip);
@@ -71,9 +67,10 @@ dsid = input("Authenticated. Please enter the data source ID: ")
 # TODO: Create a keep alive thread.
 def keepAlive(t):
     while True:
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
         time.sleep(1) # Need to pause to prevent oversubscription?
         call = "miscKeepAlive"
-        ka = client.post(url+call, headers=headers)
+        ka = client.post(url+call, verify=False, headers=headers)
         time.sleep(t)
         print(ka)
         global tstop
@@ -139,5 +136,7 @@ logging.info("Result closed.")
 # Stop the keepAlive thread
 tstop = True
 thread.join()
+logging.info("Keep alive thread closed")
 
+logging.info("Complete")
 print("Complete")
