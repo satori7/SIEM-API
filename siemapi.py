@@ -3,15 +3,24 @@
 
 import os
 import sys
-import requests
+import time
 import json
-import urllib3
 import base64
 import getpass
-import time
+import logging
+import urllib3
+import requests
 import threading
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
+
+# Set up logging.
+logging.basicConfig(filename='./debug.log',
+    level=logging.DEBUG,
+    format='%(asctime)s %(levelname)-8s %(message)s',
+    datefmt='%m-%d-%y %H:%M:%S')
+
+logging.info("SIEM-API started.")
 
 esmuser = input("Username: ");
 esmpass = getpass.getpass(prompt="Password: ");
@@ -61,16 +70,18 @@ dsid = input("Authenticated. Please enter the data source ID: ")
 
 # TODO: Create a keep alive thread.
 def keepAlive(t):
-    global alive
-    while alive == "1":
+    while True:
         time.sleep(1) # Need to pause to prevent oversubscription?
         call = "miscKeepAlive"
         ka = client.post(url+call, headers=headers)
         time.sleep(t)
         print(ka)
+        global tstop
+        if tstop:
+            break
 
 
-alive="1"
+tstop = False
 thread = threading.Thread(target=keepAlive, args=(5, ))
 thread.start()
 
@@ -118,7 +129,15 @@ fw.write(r3.text)
 
 # Close the result so the ESM doesn't get jammed up
 close = 'qryClose?resultID='+resultID2
-r3 = client.post(url+close, headers=headers)
-alive = "0"
+try:
+    r3 = client.post(url+close, headers=headers)
+except requests.exceptions.RequestException as e:
+    print(e)
+    sys.exit(1)
+logging.info("Result closed.")
+
+# Stop the keepAlive thread
+tstop = True
+thread.join()
 
 print("Complete")
