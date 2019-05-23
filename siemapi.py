@@ -64,7 +64,7 @@ headers = { "X-XSRF-TOKEN": token }
 
 dsid = input("Authenticated. Please enter the data source ID: ")
 
-# TODO: Create a keep alive thread.
+# Create a keep alive.
 def keepAlive(t):
     while True:
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -77,7 +77,7 @@ def keepAlive(t):
         if tstop:
             break
 
-
+# Start the keep alive thread.
 tstop = False
 thread = threading.Thread(target=keepAlive, args=(5, ))
 thread.start()
@@ -111,17 +111,18 @@ while True:
         break
 
 # Now that the query is done, get the results.
+# TODO: Loop through the resultes until there are none left.
+fw = open("output.json","w+")
 print("Getting results...")
-getres = 'qryGetResults?startPos=0&numRows=65000&reverse=false'
+rows = "0"
+getres = 'qryGetResults?startPos={}&numRows=10000&reverse=false'.format(rows)
 data3 = { "resultID": resultID2 }
 try:
     r3 = client.post(url+getres, headers=headers, json=data3)
 except requests.exceptions.RequestException as e:
     print(e)
     sys.exit(1)
-
 # Write the results to a file
-fw = open("output.json","w+")
 fw.write(r3.text)
 
 # Close the result so the ESM doesn't get jammed up
