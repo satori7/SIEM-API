@@ -120,6 +120,7 @@ data3 = { "resultID": resultID2 }
 try:
     r3 = client.post(url+getres, headers=headers, json=data3)
 except requests.exceptions.RequestException as e:
+    logging.FATAL(e)
     print(e)
     sys.exit(1)
 # Write the results to a file
