@@ -22,9 +22,13 @@ logging.basicConfig(filename='./debug.log',
 
 logging.info("SIEM-API started.")
 
-esmuser = input("Username: ");
-esmpass = getpass.getpass(prompt="Password: ");
-esmip = input("ESM IP: ");
+esmuser = input("Username: ")
+esmpass = getpass.getpass(prompt="Password: ")
+esmip = input("ESM IP: ")
+
+esmuser = 'NGCP'
+esmpass = 'Security.4u'
+esmip = '10.57.12.95'
 
 # Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
@@ -103,7 +107,7 @@ while True:
     except requests.exceptions.RequestException as e:
         print(e)
         sys.exit(1)
-    print('Percent Complete:')
+    print('Query Percent Complete:')
     print(r4.json()['percentComplete'])
     time.sleep(2)
     completion = r4.json()['complete']
@@ -112,19 +116,28 @@ while True:
 
 # Now that the query is done, get the results.
 # TODO: Loop through the resultes until there are none left.
+timestart = time.time()
 fw = open("output.json","w+")
 print("Getting results...")
-rows = "0"
-getres = 'qryGetResults?startPos={}&numRows=10000&reverse=false'.format(rows)
-data3 = { "resultID": resultID2 }
-try:
-    r3 = client.post(url+getres, headers=headers, json=data3)
-except requests.exceptions.RequestException as e:
-    logging.FATAL(e)
-    print(e)
-    sys.exit(1)
-# Write the results to a file
-fw.write(r3.text)
+rows = 0
+while True:
+    getres = 'qryGetResults?startPos={}&numRows=10000&reverse=false'.format(rows)
+    data3 = { "resultID": resultID2 }
+    try:
+        r3 = client.post(url+getres, headers=headers, json=data3)
+    except requests.exceptions.RequestException as e:
+        logging.CRITICAL(e)
+        print(e)
+        sys.exit(1)
+    # Write the results to a file
+    fw.write(r3.text)
+    rows = rows + 10000
+    print("Running for %s seconds." % (round(time.time() - timestart)))
+#    print(len(r3.json()))
+#    break
+    if len(r3.json()['rows']) < 1:
+        break
+
 
 # Close the result so the ESM doesn't get jammed up
 close = 'qryClose?resultID='+resultID2
