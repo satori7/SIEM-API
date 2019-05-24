@@ -26,10 +26,6 @@ esmuser = input("Username: ")
 esmpass = getpass.getpass(prompt="Password: ")
 esmip = input("ESM IP: ")
 
-esmuser = 'NGCP'
-esmpass = 'Security.4u'
-esmip = '10.57.12.95'
-
 # Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
 url = "https://{}/rs/esm/v2/".format(esmip);
@@ -135,7 +131,7 @@ while True:
     print("Running for %s seconds." % (round(time.time() - timestart)))
 #    print(len(r3.json()))
 #    break
-    if len(r3.json()['rows']) < 1:
+    if len(r3.json()) < 1:
         break
 
 
