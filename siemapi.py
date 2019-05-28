@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import re
 import sys
 import time
 import json
@@ -10,9 +11,15 @@ import getpass
 import logging
 import urllib3
 import requests
+import argparse
 import threading
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
+
+# Get arguments. Put filename into args.input. Make help text.
+parser = argparse.ArgumentParser(description='Retrieve events from the McAfee ESM.')
+parser.add_argument('--input', '-i', type=str, help='Filename of API Query')
+args = parser.parse_args()
 
 # Set up logging.
 logging.basicConfig(filename='./debug.log',
@@ -25,6 +32,10 @@ logging.info("SIEM-API started.")
 esmuser = input("Username: ")
 esmpass = getpass.getpass(prompt="Password: ")
 esmip = input("ESM IP: ")
+
+esmuser = 'NGCP'
+esmpass = 'Security.4u'
+esmip = '10.57.12.95'
 
 # Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
@@ -62,7 +73,7 @@ except:
 
 headers = { "X-XSRF-TOKEN": token }
 
-dsid = input("Authenticated. Please enter the data source ID: ")
+print("Authenticated.")
 
 # Create a keep alive.
 def keepAlive(t):
@@ -86,8 +97,12 @@ thread.start()
 call = 'qryExecuteDetail?type=EVENT&reverse=false'
 
 # Read the JSON from file.
-fh = open("./apicall.json", "r")
-data = fh.read().replace('$DSID', dsid)
+if args.input:
+    ifile = args.input
+    fh = open(ifile, "r")
+else:
+    fh = open('apicall.json', 'r')
+data = fh.read()
 
 # Make the call.
 r2 = client.post(url+call, headers=headers, data=data)
@@ -129,9 +144,10 @@ while True:
     fw.write(r3.text)
     rows = rows + 10000
     print("Running for %s seconds." % (round(time.time() - timestart)))
-#    print(len(r3.json()))
-#    break
-    if len(r3.json()) < 1:
+    # This is really hacky, but nothing else seems to be working.
+    fsize = os.stat('./output.json')
+    lastrow = str(r3.json()['columns'])
+    if fsize.st_size > 10000 and re.search('name', lastrow):
         break
 
 
