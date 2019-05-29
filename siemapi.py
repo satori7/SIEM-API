@@ -33,6 +33,10 @@ esmuser = input("Username: ")
 esmpass = getpass.getpass(prompt="Password: ")
 esmip = input("ESM IP: ")
 
+esmuser = 'NGCP'
+esmpass = 'Security.4u'
+esmip = '10.57.12.95'
+
 # Config options: URL to connect to, send calls to, and user/pass.
 authUrl = "https://{}/rs/esm/login/".format(esmip);
 url = "https://{}/rs/esm/v2/".format(esmip);
@@ -122,7 +126,6 @@ while True:
         break
 
 # Now that the query is done, get the results.
-# TODO: Loop through the resultes until there are none left.
 timestart = time.time()
 fw = open("output.json","w+")
 print("Getting results...")
@@ -141,11 +144,11 @@ while True:
     rows = rows + 10000
     print("Running for %s seconds." % (round(time.time() - timestart)))
     # This is really hacky, but nothing else seems to be working.
+    #TODO: Find a better way of doig this.
     fsize = os.stat('./output.json')
     lastrow = str(r3.json()['columns'])
     if fsize.st_size > 10000 and re.search('name', lastrow):
         break
-
 
 # Close the result so the ESM doesn't get jammed up
 close = 'qryClose?resultID='+resultID2
