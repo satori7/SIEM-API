@@ -139,9 +139,7 @@ while True:
         logging.CRITICAL(e)
         print(e)
         sys.exit(1)
-    print("We're asking for rows starting at {}".format(rows))
     rows = rows + 10000
-    print("We're asking for rows starting at {}".format(rows))
     # Write the results to a file
     fw.write(r3.text)
     print("Running for %s seconds." % (round(time.time() - timestart)))
