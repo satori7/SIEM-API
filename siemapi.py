@@ -131,7 +131,7 @@ fw = open("output.json","w+")
 print("Getting results...")
 rows = 0
 while True:
-    getres = 'qryGetResults?startPos={}&numRows=10000&reverse=false'.format(rows)
+    getres = 'qryGetResults?startPos={}&numRows=1000000&reverse=false'.format(rows)
     data3 = { "resultID": resultID2 }
     try:
         r3 = client.post(url+getres, headers=headers, json=data3)
@@ -139,22 +139,24 @@ while True:
         logging.CRITICAL(e)
         print(e)
         sys.exit(1)
+    print("We're asking for rows starting at {}".format(rows))
+    rows = rows + 10000
+    print("We're asking for rows starting at {}".format(rows))
     # Write the results to a file
     fw.write(r3.text)
-    rows = rows + 10000
     print("Running for %s seconds." % (round(time.time() - timestart)))
-    # This is really hacky, but nothing else seems to be working.
-    #TODO: Find a better way of doig this.
-    fsize = os.stat('./output.json')
-    lastrow = str(r3.json()['columns'])
-    if fsize.st_size > 10000 and re.search('name', lastrow):
-        break
+    #TODO: This is really hacky. Find a better way of doig this.
+#    fsize = os.stat('./output.json')
+#    lastrow = str(r3.json()['columns'])
+#    if fsize.st_size > 10000 and re.search('name', lastrow):
+#        break
 
 # Close the result so the ESM doesn't get jammed up
 close = 'qryClose?resultID='+resultID2
 try:
     r3 = client.post(url+close, headers=headers)
 except requests.exceptions.RequestException as e:
+    logging.CRITICAL(e)
     print(e)
     sys.exit(1)
 logging.info("Result closed.")
