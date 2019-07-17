@@ -3,13 +3,12 @@
 	"customStart": "2019-07-11T09:38:16.304Z",
 	"customEnd": "2019-07-11T12:38:16.305Z",
 	"includeTotal": false,
-	"fields": [\{"name": "SrcIP"}],
+	"fields": [{"name": "SrcIP"}],
 "filters": [{
 	"type": "EsmFieldFilter",
 	"field": {"name": "Symon_EventID"},
 	"operator": "EQUALS",
-	"values": [
-		{"type": "EsmBasicValue","value": "1"}]
+	"values": [{"type": "EsmBasicValue","value": "1"}]
 	}]
 	}
 }
