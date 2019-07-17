@@ -6,10 +6,9 @@ import json
 import urllib3
 
 # Config options: URL to connect to, send calls to, and user/pass
-authUrl = 'https://10.57.12.95/rs/esm/v2/login/'
-url = 'https://10.57.12.95/rs/esm/v2/'
-authBody = { "username": "TkdDUA==", "password": "U2VjdXJpdHkuNHU=", "locale": "en_US" }
-# authBody = { "username": "YXBpdXNlcgo=", "password": "U2VjdXJpdHkuNHU=", "locale": "en_US" }
+authUrl = 'https://172.16.0.134/rs/esm/v2/login/'
+url = 'https://172.16.0.134/rs/esm/v2/'
+authBody = { "username": "TkdDUA==", "password": "ZDBudEJyM0BrdGgxNQo=", "locale": "en_US" }
 
 # Silence the annoying insecure warning
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -26,8 +25,8 @@ headers = { "X-XSRF-TOKEN": token }
 
 # The API call that we're making
 # call = input("API Call > ")
-call = 'qryGetStatus'
-data = {"resultID": {'3533729092'}}
+call = 'qryGetSelectFields'
+#data = {"resultID": {'3533729092'}}
 
 # Make the call
 r2 = client.post(url+call, headers=headers, json=data)

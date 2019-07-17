@@ -10,5 +10,4 @@
 	"operator": "EQUALS",
 	"values": [{"type": "EsmBasicValue","value": "1"}]
 	}]
-	}
-}
+}}
