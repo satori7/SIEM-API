@@ -139,7 +139,7 @@ while True:
     # Write the results to a file
     fw.write(r3.text)
     print("Running for %s seconds." % (round(time.time() - timestart)))
-    #TODO: This is really hacky. Find a better way of doig this.
+    #TODO: This is really hacky. Find a better way of doig this (once I have another SIEM to work with).
 #    fsize = os.stat('./output.json')
 #    lastrow = str(r3.json()['columns'])
 #    if fsize.st_size > 10000 and re.search('name', lastrow):
