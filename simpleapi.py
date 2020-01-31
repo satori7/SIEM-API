@@ -5,11 +5,20 @@ import requests
 import json
 import urllib3
 
-# Config options: URL to connect to, send calls to, and user/pass
-# It's bad to publish this to the world, but the SIEM here doesn't exist anymore, so it's OK.
-authUrl = 'https://172.16.0.134/rs/esm/v2/login/'
-url = 'https://172.16.0.134/rs/esm/v2/'
-authBody = { "username": "TkdDUA==", "password": "ZDBudEJyM0BrdGgxNQo=", "locale": "en_US" }
+esmuser = input("Username: ")
+esmpass = getpass.getpass(prompt="Password: ")
+esmip = input("ESM IP: ")
+
+# Config options: URL to connect to, send calls to, and user/pass.
+authUrl = "https://{}/rs/esm/login/".format(esmip);
+url = "https://{}/rs/esm/v2/".format(esmip);
+
+esmuser = base64.b64encode(esmuser.encode('utf-8'));
+esmuser = esmuser.decode('utf-8')
+esmpass = base64.b64encode(esmpass.encode('utf-8'));
+esmpass = esmpass.decode('utf-8')
+
+authBody = { "username": "{}".format(esmuser), "password": "{}".format(esmpass), "locale": "en_US" }
 
 # Silence the annoying insecure warning
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
